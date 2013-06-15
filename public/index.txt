@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Game Dev Jobs</title>
+	<link href='http://fonts.googleapis.com/css?family=Alef' rel='stylesheet' type='text/css'>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="toplining"></div><!--end lining-top-->
+<div class="container">
+    <div class="pl">
+    	<ul>
+        	<li><a href="#"><span>Post a job</span></a></li>  
+            <li>//</li>        
+            <li><a href="#">Login</a></li>
+        </ul>
+    </div>
+        <div class="main">
+            <div class="logo-search">
+            	<div class="logo"><a href="#"><div>Awesome tagline for job board.</div></a></div><!--end logo-->
+                <div class="search">
+                	<input name="" type="text" class="textbox"/>
+					<input name="" type="button" class="btn"/>
+                </div><!--end search-->
+            </div><!--end logo search--->
+            <div class="content">
+            	<div class="side">
+                <div class="block">
+                	<h2>Job Offers</h2>
+                    <ul>
+                    	<li><a href="#">Artists</a></li>
+                    	<li><a href="#">Audio/Sound</a></li>
+                    	<li><a href="#">Business Development</a></li>
+                    	<li><a href="#">Designer</a></li>
+                    	<li><a href="#">Hardware Engineer</a></li>
+                    	<li><a href="#">Information Technology</a></li>
+                    	<li><a href="#">Manager</a></li>
+                    	<li><a href="#">Producer</a></li>
+                    	<li><a href="#">Director</a></li>
+                    	<li><a href="#">Programmer</a></li>
+                    </ul>
+                </div><!--end side-->
+                </div><!--end block-->
+                <div class="content_area">
+                	<ul class="post">
+                    	<li>
+                        	<div class="thumbnail"><img src="images/thumb1.gif" /></div><!--end thumbnail-->
+                            <div class="text_block">
+                            	<div class="title"><a href="#">Senior Unity Developer C#</a></div><!--end title-->
+                                <div class="location">INZEN Studio in New York, New York, US</div><!--end location-->
+                                <div class="get_content">
+                                	Dominium is a space-combat-trader game, and I'm looking for someone to knock out some high-quality ship and station textures but "for the love of the work" more than the pay - more's the pity,I'm a one-man band indie dev - having tried to get fund...
+                                </div><!--end get_content-->
+                            </div><!--end text_block-->
+                        </li>
+                        
+                        <li>
+                        	<div class="thumbnail"><img src="images/thumb2.gif" /></div><!--end thumbnail-->
+                            <div class="text_block">
+                            	<div class="title"><a href="#">Social Marketing campaign for browser game</a></div><!--end title-->
+                                <div class="location">Bloomberg L.P. in New York, New York, US</div><!--end location-->
+                                <div class="get_content">
+                                	Dominium is a space-combat-trader game, and I'm looking for someone to knock out some high-quality ship and station textures but "for the love of the work" more than the pay - more's the pity,I'm a one-man band indie dev - having tried to get fund...
+                                </div><!--end get_content-->
+                            </div><!--end text_block-->
+                        </li>
+                        <li>
+                        	<div class="thumbnail"><img src="images/thumb3.gif" /></div><!--end thumbnail-->
+                            <div class="text_block">
+                            	<div class="title"><a href="#">Senior Unity Developer C#</a></div><!--end title-->
+                                <div class="location">INZEN Studio in New York, New York, US</div><!--end location-->
+                                <div class="get_content">
+                                	Dominium is a space-combat-trader game, and I'm looking for someone to knock out some high-quality ship and station textures but "for the love of the work" more than the pay - more's the pity,I'm a one-man band indie dev - having tried to get fund...
+                                </div><!--end get_content-->
+                            </div><!--end text_block-->
+                        </li>
+                        <li>
+                        	<div class="thumbnail"><img src="images/thumb4.gif" /></div><!--end thumbnail-->
+                            <div class="text_block">
+                            	<div class="title"><a href="#">Senior Unity Developer C#</a></div><!--end title-->
+                                <div class="location">INZEN Studio in New York, New York, US</div><!--end location-->
+                                <div class="get_content">
+                                	Dominium is a space-combat-trader game, and I'm looking for someone to knock out some high-quality ship and station textures but "for the love of the work" more than the pay - more's the pity,I'm a one-man band indie dev - having tried to get fund...
+                                </div><!--end get_content-->
+                            </div><!--end text_block-->
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </div><!--end content_area-->
+            </div><!--end content-->
+        </div><!--end main-->
+        <div class="footer">Copyright &copy; 2013 JobsBoard.</div>
+</div><!--end container-->
+</body>
+</html>

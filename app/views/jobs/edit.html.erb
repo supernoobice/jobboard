@@ -1,0 +1,50 @@
+<div class="content_margin">
+  <h1>Post new job</h1>
+
+  <%= form_for @job, :html => { :multipart => true } do |f| %>
+      <%= f.error_messages %>
+
+      <h2>Company information</h2>
+      <%= f.label :company_name, "Company name: " %><br>
+      <%= f.text_field :company_name %><br>
+
+      <%= f.label :company_url, "Company URL: " %><br>
+      <%= f.text_field :company_url %> <small>e.g. http://www.yahoo.com/</small><br>
+      <br>
+      <h2>Job Details</h2>
+      <%= f.label :title, "Job Title: " %><br>
+      <%= f.text_field :title %><br>
+
+      <%= f.label :city, "City: " %><br>
+      <%= f.text_field :city %><br>
+
+      <%= f.label :region, "Region: " %><br>
+      <%= f.text_field :region %><br>
+
+      <%= f.label :postal_code, "Postal code: " %><br>
+      <%= f.text_field :postal_code %><br>
+
+      <%= f.label :country, "Country: " %><br>
+      <%= f.text_field :country %><br>
+
+      <%= f.label :description, "Description: " %><br>
+      <%= f.text_area :description, :class => "tinymce", :rows => 30, :cols => 70 %>
+      <%= tinymce :theme => "simple" %><br>
+
+      <%= f.label :instruction, "Instruction: " %><br>
+      <%= f.text_field :instruction %> <small>e.g. Please email resume to...</small><br>
+
+      <%= f.label :company_logo, "Company logo: " %><br>
+      <%= image_tag @job.company_logo.url %><br>
+      <%= f.file_field :company_logo %> <small>Please use 100x100 pixel size logo</small><br>
+
+
+      <%= f.label :category_id, "Category: " %><br>
+      <%= select("job", "category_id", Category.all.collect {|p| [ p.name, p.id ] }, {:include_blank => 'None'}) %><br>
+      <br>
+
+
+
+      <%= f.submit "Update job" %>
+  <% end %>
+</div>

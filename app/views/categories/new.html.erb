@@ -1,0 +1,8 @@
+<div class="content_margin">
+<h1>New category</h1>
+<%= form_for @category do |f| %>
+    <%= f.error_messages %>
+    <%= f.text_field :name %>
+    <%= f.submit 'Create' %>
+<% end %>
+</div>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @title if @title %> Game Dev Jobs</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <link href='http://fonts.googleapis.com/css?family=Alef' rel='stylesheet' type='text/css'>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="toplining"></div><!--end lining-top-->
+<div class="container">
+  <div class="pl">
+    <ul>
+      <li><span><%= link_to("Post job", new_job_path) %></span></li>
+      <li>//</li>
+      <% if user_signed_in? %>
+
+          <li><%= link_to('My profile', users_profile_path) %></li>
+          <li>//</li>
+          <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
+
+
+      <% else %>
+          <li>
+            <%= link_to('Login', new_user_session_path)  %>
+          </li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="main">
+    <div class="logo-search">
+      <div class="logo"><a href="<%= root_path %>"><div>There is no cow level.</div></a></div><!--end logo-->
+      <div class="search">
+        <form action="/" method="get">
+            <%= text_field_tag :search, params[:search], :class => 'textbox', :placeholder => "Search for jobs... e.g. developer" %>
+            <%= submit_tag "", :name => nil, :class => 'btn' %>
+        </form>
+      </div><!--end search-->
+    </div><!--end logo search--->
+    <div class="content">
+      <div class="side">
+        <div class="block">
+          <h2>Job Offers</h2>
+          <%= show_categories %>
+        </div><!--end side-->
+      </div><!--end block-->
+      <div class="content_area">
+        <% if notice %>
+            <p class="notice"><%= notice %></p>
+        <% end %>
+        <% if alert %>
+            <p class="alert"><%= alert %></p>
+        <% end %>
+
+        <div> <%= yield %> </div>
+
+
+      </div><!--end content_area-->
+    </div><!--end content-->
+  </div><!--end main-->
+  <div class="footer">Copyright &copy; 2013 <%= link_to "Game Dev Jobs", root_path %>. All Rights Reserved. <%= link_to "About", pages_about_path %></div>
+</div><!--end container-->
+
+<%= params.inspect %>
+userid: <%= current_user %>
+
+</body>
+</html>

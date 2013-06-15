@@ -1,0 +1,32 @@
+<div class="content_margin">
+<h1>Your profile</h1>
+<p>Welcome back, <%= current_user.email %>.</p>
+<br>
+  <h2>Your job listings</h2>
+
+  <ul class="job_listing">
+    <li><%= link_to 'Add new', new_job_path %></li>
+  <% @jobs.each do |job| %>
+    <li><%= image_tag job.company_logo.url, :class => 'verysmall' %>
+        <%= job.title %> <small>
+        <%= link_to "view", job_path(job) %>
+        <%= link_to "edit", edit_job_path(job) %>
+        <%= link_to "delete", job_path(job), :method => :delete, :confirm => "Are you sure?" %></small></li>
+  <% end %>
+  </ul>
+  <br>
+  <% if current_user.admin? %>
+  <h2>Categories</h2>
+  <ul class="job_listing">
+    <li><%= link_to 'Add new', new_category_path if current_user.admin? %></li>
+    <% @categories.each do |category| %>
+        <li><%= category.name %>
+        <small>
+        <%= link_to "edit", edit_category_path(category) %>
+        <%= link_to "delete", category_path(category), :method => :delete, :confirm => "Are you sure?" %></li>
+        </small>
+    <% end %>
+
+  </ul>
+  <% end %>
+</div>

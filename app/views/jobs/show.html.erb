@@ -1,0 +1,25 @@
+<% if current_user == @job.user %>
+    <small class="notice">
+      This job ad belongs to you:
+      <%= link_to "edit", edit_job_path(@job) %>  <%= link_to "delete", job_path(@job), :method => :delete, :confirm => "Are you sure?" %></small>
+<% end %>
+<div class="showjob">
+
+  <div class="thumb"><%= image_tag @job.company_logo.url %></div>
+  <h1><%= @job.title %></h1>
+  <p>
+    <strong>Company:</strong> <%= link_to @job.company_name, @job.company_url %><br>
+    <strong>Location:</strong> <%= "#{@job.city}, #{@job.region}, #{@job.country} #{@job.postal_code}" %><br>
+  </p>
+
+  <div class="description">
+  <%= @job.description.html_safe %>
+  </div>
+
+  <h2>Apply for this job:</h2>
+
+  <div class="ybox">
+    <%= @job.instruction %>
+  </div>
+  <!--end ybox-->
+</div>

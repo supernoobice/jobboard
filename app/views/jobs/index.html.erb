@@ -1,0 +1,29 @@
+<% if @category %>
+    <div style="margin-left: 30px; margin-top: 30px;">
+      <h1>Jobs for <%= @category.name %></h1>
+    </div>
+<% end %>
+<% if @search && @search != '' %>
+    <div style="margin-left: 30px; margin-top: 30px;">
+      <h1>Results for '<%= @search %>'</h1>
+    </div>
+    <% end %>
+<ul class="post">
+
+<% @jobs.reverse.each do |job| %>
+  <li class="<%= cycle('even', 'odd') -%>">
+    <div class="thumbnail"><%= image_tag job.company_logo.url %></div><!--end thumbnail-->
+    <div class="text_block">
+      <div class="title"><%= link_to(job.title, job_path(job)) %></div><!--end title-->
+      <div class="location"><%= job.company_name %> in <%= job.city %>, <%= job.region %>, <%= job.country %></div><!--end location-->
+
+
+
+      <div class="get_content">
+        <%= truncate(job.description, :length => 150, :omission => " ... ") %>
+      </div><!--end get_content-->
+    </div><!--end text_block-->
+
+  </li>
+<% end %>
+</ul>
