@@ -20,7 +20,7 @@
 
 
       <div class="get_content">
-        <%= truncate(job.description, :length => 150, :omission => " ... ") %>
+        <%= strip_tags(truncate(job.description, :length => 150, :omission => " ... ")) %>
       </div><!--end get_content-->
     </div><!--end text_block-->
 
