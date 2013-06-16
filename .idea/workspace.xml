@@ -12,7 +12,7 @@
     <file path="/index.html.erb" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1371310688278" ignored="false" />
     <file path="/categories_controller.rb" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1371298053919" ignored="false" />
     <file path="/new.html.erb" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1371310253046" ignored="false" />
-    <file path="/Gemfile" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1371316918754" ignored="false" />
+    <file path="/Gemfile" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1371317117543" ignored="false" />
     <file path="/Ruby Console" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1371311601383" ignored="false" />
     <file path="/edit.html.erb" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1371310401878" ignored="false" />
     <file path="/update.html.erb" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1371135505972" ignored="false" />
@@ -66,7 +66,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="210" selection-end="210" vertical-scroll-proportion="0.27182865">
+            <state line="11" column="2" selection-start="212" selection-end="212" vertical-scroll-proportion="0.27182865">
               <folding />
             </state>
           </provider>
@@ -916,7 +916,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="210" selection-end="210" vertical-scroll-proportion="0.27182865">
+        <state line="11" column="2" selection-start="212" selection-end="212" vertical-scroll-proportion="0.27182865">
           <folding />
         </state>
       </provider>
