@@ -32,9 +32,8 @@ class JobsController < ApplicationController
 
     if @job.save
       flash[:notice] = "Congratulations! You created a new job post."
-      page_access_token = "CAACEdEose0cBAJxKicvNHZBo0OddekrBhZCXDagkSGjkTbj2FzAPLjaNxS2w90TA8Aq64FaOqcnwZAZBr7ZA9IsXxX5wLVFXFEoGdcCncOGkbJZCfwr0sP7aW84c3vbRZBaj9GVhh7MXh0SWZAMZBbxVV0FzgRywYYNwRseSY8uw7kgZDZD"
-      page = FbGraph::Page.new('GameDevJobs').fetch(:access_token => page_access_token, :fields => :access_token)
-      page.link!( :message => @job.title, :link => "http://shielded-caverns-4260.herokuapp.com/jobs/#{@job.id}" )
+      me = FbGraph::User.me("CAAFzDBj7hLUBANoSUZC3c5BWZAxNBWLv1eQytZAVZAkM6YW3fbvGsrUTeoiOsL5JFh8qdp8j4iprhQTjWKQpkXZA60hvc1w2ZC5lvFHZCIbk5apOHjyqCAGReY9eEBfHftgO5TlUuqCZBltyGXLXYtslNVo6mGbrdAwLDl9bDZBsgdxkKHSuUiY7z")
+      me.feed!( :message => "A new job has been posted! #{@job.title}", :link => "http://shielded-caverns-4260.herokuapp.com/jobs/#{@job.id}" )
       redirect_to jobs_path
     else
       render :action => :new
