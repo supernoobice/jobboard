@@ -32,7 +32,7 @@ class JobsController < ApplicationController
 
     if @job.save
       flash[:notice] = "Congratulations! You created a new job post."
-      me = FbGraph::User.me("CAAFzDBj7hLUBANoSUZC3c5BWZAxNBWLv1eQytZAVZAkM6YW3fbvGsrUTeoiOsL5JFh8qdp8j4iprhQTjWKQpkXZA60hvc1w2ZC5lvFHZCIbk5apOHjyqCAGReY9eEBfHftgO5TlUuqCZBltyGXLXYtslNVo6mGbrdAwLDl9bDZBsgdxkKHSuUiY7z")
+      me = FbGraph::User.me("x")
       me.feed!( :message => "A new job has been posted! #{@job.title}", :link => "http://shielded-caverns-4260.herokuapp.com/jobs/#{@job.id}" )
       redirect_to jobs_path
     else

@@ -20,7 +20,7 @@
     <file path="/about.html.erb" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1371197561183" ignored="false" />
     <file path="/job.rb" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1371217953500" ignored="false" />
     <file path="/user.rb" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1371181956872" ignored="false" />
-    <file path="/jobs_controller.rb" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1372261038398" ignored="false" />
+    <file path="/jobs_controller.rb" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1372261473420" ignored="false" />
     <file path="/20130614043417_rename_column_job_title_in_job_to_title.rb" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1371184512421" ignored="false" />
     <file path="/show.html.erb" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1371295510365" ignored="false" />
     <file path="/users_controller.rb" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1371297683479" ignored="false" />
@@ -54,7 +54,7 @@
       <file leaf-file-name="jobs_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/jobs_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="160" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.71161824">
+            <state line="34" column="30" selection-start="804" selection-end="804" vertical-scroll-proportion="0.6323232">
               <folding />
             </state>
           </provider>
@@ -817,7 +817,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/jobs_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="160" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.71161824">
+        <state line="34" column="30" selection-start="804" selection-end="804" vertical-scroll-proportion="0.6323232">
           <folding />
         </state>
       </provider>
