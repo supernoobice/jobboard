@@ -12,7 +12,9 @@
 
 <% @jobs.reverse.each do |job| %>
   <li class="<%= cycle('even', 'odd') -%>">
-    <div class="thumbnail"><%= image_tag job.company_logo.url %></div><!--end thumbnail-->
+    <div class="thumbnail">
+      <%= image_tag job.company_logo.url %>
+    </div><!--end thumbnail-->
     <div class="text_block">
       <div class="title"><%= link_to(job.title, job_path(job)) %></div><!--end title-->
       <div class="location"><%= job.company_name %> in <%= job.city %>, <%= job.region %>, <%= job.country %></div><!--end location-->

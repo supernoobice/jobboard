@@ -9,7 +9,7 @@
     <file path="/style.css" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1371310919732" ignored="false" />
     <file path="/Dummy.txt" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1371184452495" ignored="false" />
     <file path="/category.rb" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1371217968719" ignored="false" />
-    <file path="/index.html.erb" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1371394335816" ignored="false" />
+    <file path="/index.html.erb" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1372217888108" ignored="false" />
     <file path="/categories_controller.rb" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1371298053919" ignored="false" />
     <file path="/new.html.erb" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1371310253046" ignored="false" />
     <file path="/Gemfile" changelist="30b929d1-4817-4a17-beff-f70085aa37d6" time="1372214646545" ignored="false" />
@@ -91,10 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/jobs/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="110" selection-start="273" selection-end="273" vertical-scroll-proportion="-4.375">
+            <state line="15" column="6" selection-start="430" selection-end="430" vertical-scroll-proportion="0.39404553">
               <folding />
             </state>
           </provider>
@@ -109,10 +109,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/jobs/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="18" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.56742555">
+            <state line="21" column="94" selection-start="708" selection-end="708" vertical-scroll-proportion="-7.25">
               <folding />
             </state>
           </provider>
@@ -160,12 +160,12 @@
         <option value="$PROJECT_DIR$/app/views/users/profile.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/style.css" />
-        <option value="$PROJECT_DIR$/app/views/jobs/index.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/dropbox.yml" />
         <option value="$PROJECT_DIR$/app/models/job.rb" />
         <option value="$PROJECT_DIR$/app/views/jobs/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/jobs/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/jobs/index.html.erb" />
       </list>
     </option>
   </component>
@@ -854,13 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/jobs/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="110" selection-start="273" selection-end="273" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="91" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
@@ -877,7 +870,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/jobs/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="18" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.56742555">
+        <state line="21" column="94" selection-start="708" selection-end="708" vertical-scroll-proportion="-7.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/jobs/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="6" selection-start="430" selection-end="430" vertical-scroll-proportion="0.39404553">
           <folding />
         </state>
       </provider>
