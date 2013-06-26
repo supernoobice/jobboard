@@ -3,7 +3,9 @@ class Job < ActiveRecord::Base
                   :country, :description, :instruction,
                   :postal_code, :region, :user_id, :title, :company_logo
 
-  has_attached_file :company_logo
+  has_attached_file :company_logo,
+                    :storage => :dropbox,
+                    :dropbox_credentials => Rails.root.join("config/dropbox.yml")
 
   validates :company_name, :presence => true
   validates :title, :presence => true

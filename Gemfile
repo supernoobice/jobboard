@@ -5,6 +5,7 @@ gem 'devise'
 gem 'paperclip'
 gem 'dynamic_form'
 gem 'tinymce-rails'
+gem "paperclip-dropbox", ">= 1"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
