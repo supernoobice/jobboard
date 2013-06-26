@@ -6,6 +6,7 @@ gem 'paperclip'
 gem 'dynamic_form'
 gem 'tinymce-rails'
 gem "paperclip-dropbox", ">= 1"
+gem 'fb_graph'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
